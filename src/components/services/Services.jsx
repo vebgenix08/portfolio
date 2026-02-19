@@ -40,21 +40,24 @@ const listVariants = {
 const services = [
   {
     id: 1,
-    img: "/service1.png",
+    img: "service1.png",
     title: "Custom App & Website Development",
-    counter: "We build high-performance web applications and mobile apps tailored to meet diverse business needs across industries.",
+    counter:
+      "We build high-performance web applications and mobile apps tailored to meet diverse business needs across industries.",
   },
   {
     id: 2,
-    img: "/service2.png",
+    img: "service2.png",
     title: "Modern AI & Advanced Technology Solutions",
-    counter: "We empower clients with cutting-edge tools, including custom AI agents and intelligent systems designed specifically for their business growth.",
+    counter:
+      "We empower clients with cutting-edge tools, including custom AI agents and intelligent systems designed specifically for their business growth.",
   },
   {
     id: 3,
-    img: "/service3.png",
+    img: "service3.png",
     title: "End-to-End Support",
-    counter: "We provide complete lifecycle support — from planning and development to deployment, maintenance, and continuous optimization.",
+    counter:
+      "We provide complete lifecycle support — from planning and development to deployment, maintenance, and continuous optimization.",
   },
 ];
 

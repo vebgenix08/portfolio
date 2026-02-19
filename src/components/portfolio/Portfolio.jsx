@@ -5,35 +5,35 @@ import { motion, useInView, useScroll, useTransform } from "motion/react";
 const items = [
   {
     id: 1,
-    img: "/renu.png",
+    img: "renu.png",
     title: "High-Level Designs",
     desc: "We create strategic high-level designs that form the foundation of scalable and future-ready digital solutions.",
     link: "/",
   },
   {
     id: 2,
-    img: "/vv.png",
+    img: "vv.png",
     title: "Expert Team",
     desc: "Our experienced professionals combine technical expertise and innovation to deliver high-quality, reliable digital solutions.",
     link: "/",
   },
   {
     id: 3,
-    img: "/ss.png",
+    img: "ss.png",
     title: "Fast & Reliable",
     desc: "We deliver fast and reliable digital solutions that are built to last, ensuring seamless performance and user satisfaction.",
     link: "/",
   },
   {
     id: 4,
-    img: "/sss.png",
+    img: "sss.png",
     title: "End-to-End Support",
     desc: "We provide complete support at every stage — from strategy and development to deployment, maintenance, and continuous improvement.",
     link: "/",
   },
   {
     id: 5,
-    img: "/ssss.png",
+    img: "ssss.png",
     title: "Trust Building",
     desc: "We build lasting relationships through transparency, reliability, and consistent delivery of high-quality solutions.",
     link: "/",
@@ -96,9 +96,7 @@ const ListItem = ({ item }) => {
       >
         <motion.h1 variants={textVariants}>{item.title}</motion.h1>
         <motion.p variants={textVariants}>{item.desc}</motion.p>
-        <motion.a variants={textVariants} href={item.link}>
-        
-        </motion.a>
+        <motion.a variants={textVariants} href={item.link}></motion.a>
       </motion.div>
     </div>
   );
@@ -138,7 +136,7 @@ const Portfolio = () => {
   const xTranslate = useTransform(
     scrollYProgress,
     [0, 1],
-    [0, -window.innerWidth * items.length]
+    [0, -window.innerWidth * items.length],
   );
 
   return (
