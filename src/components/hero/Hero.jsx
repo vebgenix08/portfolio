@@ -46,7 +46,7 @@ const Hero = () => {
           transition={{ duration: 1 }}
           className="hTitle"
         >
-         VEBGENIX,
+          VEBGENIX,
           <br />
           <span>Creating the Technology Behind Your Growth.</span>
         </motion.h1>
@@ -57,13 +57,14 @@ const Hero = () => {
           animate="animate"
           className="awards"
         >
-          <motion.h2 variants={awardVariants}>E-Mail : contact@vebgenix.com</motion.h2>
-          <motion.p variants={awardVariants}>
-            
-          </motion.p>
-          <motion.div variants={awardVariants} className="awardList">
-            
-          </motion.div>
+          <motion.h2 variants={awardVariants}>
+            E-Mail : contact@vebgenix.com
+          </motion.h2>
+          <motion.p variants={awardVariants}></motion.p>
+          <motion.div
+            variants={awardVariants}
+            className="awardList"
+          ></motion.div>
         </motion.div>
         {/* SCROLL SVG */}
         <motion.a
@@ -111,19 +112,13 @@ const Hero = () => {
           animate="animate"
           className="follow"
         >
-          <motion.a variants={followVariants} href="/">
-
-            
-          </motion.a>
-          <motion.a variants={followVariants} href="/">
-            
-          </motion.a>
-          <motion.a variants={followVariants} href="/">
-           
-          </motion.a>
-          <motion.div variants={followVariants} className="followTextContainer">
-            
-          </motion.div>
+          <motion.a variants={followVariants} href="/"></motion.a>
+          <motion.a variants={followVariants} href="/"></motion.a>
+          <motion.a variants={followVariants} href="/"></motion.a>
+          <motion.div
+            variants={followVariants}
+            className="followTextContainer"
+          ></motion.div>
         </motion.div>
         {/* BUBBLE */}
         <Speech />
@@ -133,12 +128,10 @@ const Hero = () => {
           transition={{ duration: 1 }}
           className="certificate"
         >
-          <img src="/certificate.png" alt="" />
+          <img src="certificate.png" alt="" />
           Trusted by Clients.
           <br />
-        Driven by Innovation.
-          
-        
+          Driven by Innovation.
         </motion.div>
         {/* CONTACT BUTTON */}
         <motion.a
@@ -202,7 +195,7 @@ const Hero = () => {
           </Suspense>
         </Canvas>
         <div className="hImg">
-          <img src="/maaan.png" alt="" />
+          <img src="maaan.png" alt="" />
         </div>
       </div>
     </div>
