@@ -1,0 +1,35 @@
+name: Deploy Portfolio
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build with secrets
+        run: npm run build
+        env:
+          VITE_SERVICE_ID: ${{ secrets.VITE_SERVICE_ID }}
+          VITE_TEMPLATE_ID: ${{ secrets.VITE_TEMPLATE_ID }}
+          VITE_PUBLIC_KEY: ${{ secrets.VITE_PUBLIC_KEY }}
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist
+          path: dist/
